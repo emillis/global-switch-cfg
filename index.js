@@ -1,5 +1,5 @@
-const x = require(`./dist/main`)
+const main = require(`./dist/main`)
 
-let a = new x.GlobalSwitchConfig();
-
-console.log(a);
+module.exports = {
+    GlobalSwitchConfig: main.GlobalSwitchConfig
+}
